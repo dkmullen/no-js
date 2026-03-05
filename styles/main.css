@@ -106,6 +106,13 @@ body {
   gap: 8px;
 }
 
+.note-block {
+  background-color: rgb(225, 226, 226);
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+}
+
 @media (min-width: 769px) {
   .mobile-nav {
     display: none;
@@ -113,7 +120,7 @@ body {
   .desktop-nav {
     display: block;
   }
-  .parent {
+  .button-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
