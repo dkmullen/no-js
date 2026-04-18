@@ -1,12 +1,13 @@
 function ready(fn) {
-  if (document.readyState !== "loading") {
+  if (document.readyState !== 'loading') {
     fn();
     return;
   }
-  document.addEventListener("DOMContentLoaded", fn);
+  document.addEventListener('DOMContentLoaded', fn);
 }
 ready(function () {
-  loadHTML("nav-include", "../includes/nav-header.html");
+  loadHTML('nav-include', '../includes/nav-header.html');
+  loadHTML('site-footer', '../includes/footer.html');
 });
 
 async function loadHTML(id, url) {
@@ -15,8 +16,8 @@ async function loadHTML(id, url) {
   document.getElementById(id).innerHTML = await res.text();
 }
 
-document.querySelectorAll(".grid-div").forEach((element) => {
-  element.addEventListener("click", () => {
+document.querySelectorAll('.grid-div').forEach((element) => {
+  element.addEventListener('click', () => {
     console.log(element.classList[0]);
   });
 });
