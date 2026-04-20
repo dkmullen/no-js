@@ -9,7 +9,7 @@ body {
 body {
   font-family: 'Courier New', Courier, monospace;
   /* font-size: clamp(1.2rem, 2.5vw, 2rem); */
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 #page-container {
   max-width: 900px;
@@ -148,4 +148,34 @@ body {
   .div7 {
     grid-row-start: 3;
   }
+}
+input {
+  height: 30px;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: large;
+  margin-bottom: 1em;
+}
+
+button {
+  height: 40px;
+  border-radius: 4px;
+  padding: 2px 10px;
+  font-size: large;
+  cursor: pointer;
+  background-color: rgb(6, 86, 6);
+  color: white;
+}
+
+#site-footer {
+  text-align: center;
+  background-color: rgb(6, 86, 6);
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
